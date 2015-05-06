@@ -71,6 +71,7 @@
        .renderPopup(true)
        .filterByArea(true);
 
+    (function () {
     dc.rowChart("#category", groupname)
       .dimension(category)
       .group(categoryGroup)
@@ -80,6 +81,7 @@
       .colors(["#2ca25f"])
       .xAxis().ticks(2).tickFormat(d3.format("s"));
 
+      })()
     dc.rowChart("#dayofweek", groupname)
       .dimension(dayofweek)
       .group(dayofweekGroup)
