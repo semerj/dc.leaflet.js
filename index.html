@@ -3,8 +3,8 @@
 <head>
   <title>DC.js + Leaflet</title>
   <meta charset="UTF-8">
-  <link type="text/css" href="leaflet.css" rel="stylesheet"/>
-  <link type="text/css" href="dc.css" rel="stylesheet"/>
+  <link type="text/css" href="styles/leaflet.css" rel="stylesheet"/>
+  <link type="text/css" href="styles/dc.css" rel="stylesheet"/>
   <style>
     #container {
       width:800px;
@@ -23,26 +23,26 @@
 <div id="container">
   <h2>World Series Crimes</h2>
   <div id='dc-data-count'>
-      <strong class='filter-count'></strong> selected out of <strong class='total-count'></strong> records
-    </div>
+    <p><strong class='filter-count'></strong> selected out of <strong class='total-count'></strong> records</p>
+  </div>
   <div id="map">
-    <a class="reset" href="javascript:mapChart.filterAll('marker-area');dc.redrawAll('marker-are');" style="display: none;">reset</a>
-    <div class="clearfix"></div>
+    <!-- <a class="reset" href="javascript:mapChart.filterAll('marker-area');dc.redrawAll('marker-area');" style="display: none;">reset</a> -->
+    <!-- <div class="clearfix"></div> -->
   </div>
   <div id="charts">
     <div id="crimesbyhour">
       <strong>Crimes by hour</strong>
-      <a class="reset" href="javascript:hourChart.filterAll('marker-area');dc.redrawAll('marker-are');" style="display: none;">reset</a>
+      <a class="reset" href="javascript:hourChart.filterAll('marker-area');dc.redrawAll('marker-area');" style="display: none;">reset</a>
       <div class="clearfix"></div>
     </div>
     <div id="category">
       <strong>Crimes by category</strong>
-      <a class="reset" href="javascript:categoryChart.filterAll('marker-area');dc.redrawAll('marker-are');" style="display: none;">reset</a>
+      <a class="reset" href="javascript:categoryChart.filterAll('marker-area');dc.redrawAll('marker-area');" style="display: none;">reset</a>
       <div class="clearfix"></div>
     </div>
     <div id="game">
       <strong>Crimes by game</strong>
-      <a class="reset" href="javascript:gameChart.filterAll('marker-area');dc.redrawAll('marker-are');" style="display: none;">reset</a>
+      <a class="reset" href="javascript:gameChart.filterAll('marker-area');dc.redrawAll('marker-area');" style="display: none;">reset</a>
       <div class="clearfix"></div>
     </div>
   </div>
